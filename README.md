@@ -22,3 +22,13 @@ get_sec.py -n 5 -smin 3 -smax 20 -m 4 -o test.out
 ```
 
 Will create a file `-o test.out` of length `n=5` lines, with a minimum sentence length of `smin=3`, maximum sentence length of `smax=20` and `m=4` possible distinct vocabulary items.
+
+The created file will look like this:
+
+```
+A C A D D D D B A
+A D D A D C B A C A A A A D B D A B D D
+C B B D C A D A B C A C
+B C C D D A D B D D B C C A D A B D
+D A D A C D B B B A B B D C C D
+```
