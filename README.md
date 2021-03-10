@@ -32,3 +32,11 @@ C B B D C A D A B C A C
 B C C D D A D B D D B C C A D A B D
 D A D A C D B B B A B B D C C D
 ```
+
+
+#### Single context trigrams
+
+```bash
+mkdir data
+python generate_trigrams.py -slen 3 -m 10 -o data/single_context_freq
+```

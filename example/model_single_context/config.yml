@@ -1,0 +1,27 @@
+devices:
+    - 0
+type: lm
+tied-embeddings: true
+dim-emb: 2
+train-sets:
+    - ../data/single_context_freq
+#valid-sets:
+#    - 1Ksmi5smax20m20r100.valid
+workspace: 3000
+vocabs:
+    - vocab.rand.yml
+valid-freq: 10000
+save-freq: 100
+keep-best: true
+overwrite: true
+disp-freq: 50
+valid-metrics:
+    - ce-mean-words
+    - perplexity
+log: train.log
+valid-log: valid.log
+model: model.npz
+output-omit-bias: true # Remove the bias as Andreas requested
+after-epochs: 10000
+shuffle-in-ram: true
+#embedding-fix-trg: true # fine tune for 1000 epochs
